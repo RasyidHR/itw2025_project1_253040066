@@ -1,19 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Pixelify Sans", sans-serif;
   overflow-x: hidden;
-  background-color: #192338;
+  background-color: #0a0a0a;
 }
 
 /* Navbar */
 
 nav {
   display: flex;
-  background-color: #192338;
+  background-color: #0a0a0a;
   justify-content: space-around;
   padding: 20px 0;
   color: #ffffff;
   height: 30px;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 nav .logo {
@@ -46,8 +53,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffffff;
-  background-color: #31487a;
+  color: #1c1c1c;
+  background-color: #ffffff;
 }
 
 /* Hamburger menu */
@@ -81,7 +88,7 @@ nav ul li a:hover {
 /* pahlawan */
 
 .hero {
-  background-image: url(../img/hero3.jpg);
+  background-image: url(../img/hero5.png);
   background-size: cover;
   width: 100%;
   height: 100dvh;
@@ -107,24 +114,25 @@ nav ul li a:hover {
 }
 .hero h1,
 .hero h3 {
-  text-shadow: 0 6px 12px #2c2f36;
+  text-shadow: 0 6px 12px #0a0a0a;
 }
 
 .hero a {
   display: inline-block;
   text-decoration: none;
-  background-color: #1e2e4f;
-  color: #d9e1f1;
+  background-color: #1c1c1c;
+  color: #f1f1f1;
   padding: 15px 50px;
   border-radius: 10px;
   font-weight: 600;
   margin-bottom: 50px;
-  box-shadow: 0 4px 6px #2c2f36;
+  box-shadow: 0 4px 6px #1c1c1c;
   position: absolute;
 }
 
 .hero a:hover {
-  background-color: #31487a;
+  background-color: #ffffff;
+  color: #1c1c1c;
   transform: translateY(-3px);
 }
 
@@ -146,7 +154,7 @@ nav ul li a:hover {
   height: 600px;
   object-fit: cover;
   border-radius: 50px;
-  box-shadow: 0 25px 30px #8fb3e2;
+  box-shadow: 0 25px 30px #b0b0b0;
 }
 
 .profil-kanan {
@@ -156,14 +164,15 @@ nav ul li a:hover {
   padding: 50px;
   margin: auto;
   border-radius: 15px 0px 0px 15px;
-  background-color: #1e2e4f;
-  color: #d9e1f1;
+  background-color: #1c1c1c;
+  color: #ffffff;
 }
 
 .bungkus-kanan h1 {
   font-family: "Orbitron", sans-serif;
   margin-bottom: 20px;
-  color: #8fb3e2;
+  color: #ffffff;
+  text-shadow: 0 6px 12px #b0b0b0;
 }
 
 .bungkus-kanan {
@@ -188,8 +197,9 @@ nav ul li a:hover {
   margin-bottom: 10px;
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
-  color: #8fb3e2;
+  color: #ffffff;
   padding: 20px 10px;
+  text-shadow: 0 6px 12px #b0b0b0;
 }
 
 .about p {
@@ -200,8 +210,8 @@ nav ul li a:hover {
   width: 200px;
   height: 90px;
   border-radius: 10px;
-  background-color: #1e2e4f;
-  color: #d9e1f1;
+  background-color: #1c1c1c;
+  color: #ffffff;
 }
 
 /* skill kok kotak? */
@@ -215,8 +225,9 @@ nav ul li a:hover {
   font-size: 2rem;
   margin-top: 350px;
   font-family: "Orbitron", sans-serif;
-  color: #8fb3e2;
+  color: #ffffff;
   padding: 20px 10px;
+  text-shadow: 0 6px 12px #b0b0b0;
 }
 
 .bungkus-kotak {
@@ -224,11 +235,11 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  color: #d9e1f1;
+  color: #ffffff;
 }
 
 .kotak-skill {
-  background-color: #1e2e4f;
+  background-color: #1c1c1c;
   padding: 50px 100px;
   border-radius: 8px;
   font-weight: bold;
@@ -248,7 +259,36 @@ nav ul li a:hover {
   font-size: 2rem;
   position: relative;
   font-family: "Orbitron", sans-serif;
-  color: #8fb3e2;
+  color: #ffffff;
+  text-shadow: 0 6px 12px #b0b0b0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Wrapper Foto */
+.gallery-grid .img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Gambar */
+.gallery-grid .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s;
+}
+
+.gallery-grid .img:hover img {
+  transform: scale(1.05);
 }
 
 /* ini kotak */
@@ -256,14 +296,14 @@ nav ul li a:hover {
 .contact-container {
   margin: 90px;
   padding: 30px;
-  background-color: #1e2e4f;
+  background-color: #1c1c1c;
   border-radius: 15px;
   font-family: "Orbitron", sans-serif;
 }
 
 .contact-container h2 {
   text-align: center;
-  color: #8fb3e2;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -280,7 +320,7 @@ nav ul li a:hover {
 
 input {
   padding: 12px 15px;
-  border: 1px solid #1e2e4f;
+  border: 1px solid #555555;
   border-radius: 10px;
   outline: none;
   transition: 0.3s;
@@ -288,12 +328,12 @@ input {
   box-sizing: border-box;
 }
 input:focus {
-  border-color: #8fb3e2;
+  border-color: #ffffff;
 }
 
 button {
-  background-color: #1e2e4f;
-  color: #f1f1f1;
+  background-color: #1c1c1c;
+  color: #ffffff;
   padding: 12px;
   border: none;
   border-radius: 8px;
@@ -303,7 +343,8 @@ button {
 }
 
 button:hover {
-  background-color: #31487a;
+  background-color: #ffffff;
+  color: #0a0a0a;
 }
 
 /* Hamburger menu animation */
@@ -352,7 +393,7 @@ button:hover {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    background-color: #192338;
+    background-color: #0a0a0a;
     z-index: -1;
     transform: translateX(100%);
     transition: all 0.5s;

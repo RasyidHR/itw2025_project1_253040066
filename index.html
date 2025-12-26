@@ -8,8 +8,9 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>My Portofolio</title>
+    <title>Portofolio | RasyidHR</title>
   </head>
   <body>
     <div class="container">
@@ -19,11 +20,11 @@
           <h4>Portofolio</h4>
         </div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Skill</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skill">Skill</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Contact">Contact Me</a></li>
         </ul>
         <div class="menu-toggle">
           <input type="checkbox" />
@@ -32,98 +33,137 @@
           <span></span>
         </div>
       </nav>
-      <script src="js/script.js"></script>
       <!-- akhir navbar -->
 
-      <div class="hero">
-        <h1>Halo, Selamat Datang!</h1>
-        <h3>Tempat cerita diwujudkan melalui gambar.</h3>
-        <a href="#">NEXT > </a>
-      </div>
+      <section id="Home">
+        <div class="hero">
+          <h1>Halo, Selamat Datang!</h1>
+          <h3>Tempat cerita diwujudkan melalui Foto.</h3>
+          <a href="#Profil">NEXT > </a>
+        </div>
+      </section>
 
       <!-- profil -->
-      <div class="profil">
-        <div class="profil-kiri">
-          <img src="img/DSC00291(1x1).JPG" alt="" />
-        </div>
-        <div class="profil-kanan">
-          <div class="bungkus-kanan">
-            <h1>Profil</h1>
 
-            <ul>
-              <li>Nama: Rasyid Hakim Rifatullah</li>
-              <li>TTL: 31-05-2006 Jakarta</li>
-              <li>No. HP: 085165659512</li>
-              <li>Umur: 19th</li>
-              <li>Email: undercover</li>
-              <li>Media Sosial: @ocid_sj</li>
-            </ul>
+      <section id="Profil">
+        <div class="profil">
+          <div class="profil-kiri" data-aos="fade-right" data-aos-offset="150">
+            <img src="img/FotoProfil.jpg" alt="" />
+          </div>
+          <div class="profil-kanan" data-aos="fade-left">
+            <div class="bungkus-kanan">
+              <h1>Profil</h1>
+
+              <ul>
+                <li>Nama: Rasyid Hakim Rifatullah</li>
+                <li>TTL: 31-05-2006 Jakarta</li>
+                <li>No. HP: 085165659512</li>
+                <li>Umur: 19th</li>
+                <li>Email: masrasyid000@gmail</li>
+                <li>Media Sosial: @ocid_sj</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- akhir profil -->
 
       <!-- about -->
-      <div class="about">
-        <h2>Tentang saya</h2>
-        <p>
-          Halo, saya Ocid, seorang mahasiswa semester 1 yang berdomisili di
-          Bandung. Saya merupakan lulusan SMAN 2 Bandung, dengan latar
-          pendidikan sebelumnya di SMPN 12 Bandung dan SD Labschool.
-          Ketertarikan saya pada dunia fotografi telah tumbuh sejak beberapa
-          tahun terakhir dan menjadi bagian penting dalam perjalanan kreatif
-          saya.
-        </p>
-        <p>
-          Saya telah menekuni fotografi selama kurang lebih 3-4 tahun, berawal
-          dari mengikuti event Jepang hingga saat ini aktif sebagai fotografer
-          Sunmori. Selama perjalanan tersebut, saya banyak mempelajari teknik
-          pengambilan gambar, eksplorasi gaya visual, serta membangun pengalaman
-          dan relasi dengan komunitas yang memiliki passion serupa. Melalui
-          setiap karya, saya berusaha menangkap momen secara autentik dan terus
-          mengembangkan kualitas visual dalam fotografi saya.
-        </p>
-      </div>
+
+      <section id="About">
+        <div class="about" data-aos="fade-up">
+          <h2>Tentang saya</h2>
+          <p>
+            Halo, saya Rasyid, seorang mahasiswa semester 1 yang berdomisili di
+            Bandung. Saya merupakan lulusan SMAN 2 Bandung, dengan latar
+            pendidikan sebelumnya di SMPN 12 Bandung dan SD Labschool.
+            Ketertarikan saya pada dunia fotografi telah tumbuh sejak beberapa
+            tahun terakhir dan menjadi bagian penting dalam perjalanan kreatif
+            saya.
+          </p>
+          <p>
+            Saya telah menekuni fotografi selama kurang lebih 3-4 tahun, berawal
+            dari mengikuti event Jepang hingga saat ini aktif sebagai fotografer
+            Sunmori. Selama perjalanan tersebut, saya banyak mempelajari teknik
+            pengambilan gambar, eksplorasi gaya visual, serta membangun
+            pengalaman dan relasi dengan komunitas yang memiliki passion serupa.
+            Melalui setiap karya, saya berusaha menangkap momen secara autentik
+            dan terus mengembangkan kualitas visual dalam fotografi saya.
+          </p>
+        </div>
+      </section>
       <!-- alhir about -->
 
       <!-- skills 1,2,3,4,5 -->
-      <div class="skill-kotak">
-        <h2>Skill</h2>
-        <div class="bungkus-kotak">
-          <div class="kotak-skill">Fotografi</div>
-          <div class="kotak-skill">Videografi</div>
-          <div class="kotak-skill">Editing</div>
-          <div class="kotak-skill">Html</div>
-          <div class="kotak-skill">CSS</div>
+      <section id="Skill">
+        <div class="skill-kotak">
+          <h2>Skill</h2>
+          <div class="bungkus-kotak">
+            <div class="kotak-skill" data-aos="flip-up">Fotografi</div>
+            <div class="kotak-skill" data-aos="flip-up">Videografi</div>
+            <div class="kotak-skill" data-aos="flip-up">Editing</div>
+            <div class="kotak-skill" data-aos="flip-up">Html</div>
+            <div class="kotak-skill" data-aos="flip-up">CSS</div>
+          </div>
         </div>
-      </div>
+      </section>
       <!-- ulti -->
 
       <!-- Aawas ada Gallery -->
-      <div class="Gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <div class="img"><img src="" alt="Fotografi 1" /></div>
-          <div class="img"><img src="" alt="Fotografi 2" /></div>
-          <div class="img"><img src="" alt="Fotografi 3" /></div>
-          <div class="img"><img src="" alt="Fotografi 4" /></div>
-          <div class="img"><img src="" alt="Fotografi 5" /></div>
-          <div class="img"><img src="" alt="Fotografi 6" /></div>
+      <section id="Gallery">
+        <div class="Gallery">
+          <h2>Gallery</h2>
+          <div class="gallery-grid">
+            <div class="img">
+              <img src="img/foto-6.jpg" alt="Fotografi 1" />
+            </div>
+            <div class="img">
+              <img src="img/foto-5.jpg" alt="Fotografi 2" />
+            </div>
+            <div class="img">
+              <img src="img/foto-4.jpg" alt="Fotografi 3" />
+            </div>
+            <div class="img">
+              <img src="img/foto-8.jpg" alt="Fotografi 4" />
+            </div>
+            <div class="img">
+              <img src="img/foto-7.jpg" alt="Fotografi 5" />
+            </div>
+            <div class="img">
+              <img src="img/foto-3.jpg" alt="Fotografi 6" />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
     <!-- akhir Galery-->
     <!-- kotak saya -->
-    <div class="contact-container">
-      <h2>Contact Me</h2>
-      <form name="submit-to-google-sheet">
-        <input name="email" type="email" placeholder="Email Address" required />
-        <div class="name-group">
-          <input name="firstName" type="text" placeholder="First Name" />
-          <input name="lastName" type="text" placeholder="Last Name" />
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+
+    <section id="Contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form name="submit-to-google-sheet">
+          <input
+            name="email"
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+          <div class="name-group">
+            <input name="firstName" type="text" placeholder="First Name" />
+            <input name="lastName" type="text" placeholder="Last Name" />
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- awas ada js & aos -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
