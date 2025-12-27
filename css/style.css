@@ -16,19 +16,21 @@ nav {
   justify-content: space-around;
   padding: 20px 0;
   color: #ffffff;
-  height: 30px;
+  min-height: 30px;
   align-items: center;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 999;
 }
 
 nav .logo {
   font-family: "Orbitron", sans-serif;
+  z-index: 1000;
 }
 
 nav h4 {
   font-size: 20px;
+  margin: 0;
 }
 
 nav ul {
@@ -42,9 +44,6 @@ nav ul {
 nav ul li a {
   font-size: 15px;
   font-family: "Courier New", Courier, monospace;
-}
-
-nav ul li a {
   color: #ffffff;
   text-decoration: none;
   padding: 10px 15px;
@@ -64,6 +63,8 @@ nav ul li a:hover {
   height: 20px;
   justify-content: space-between;
   position: relative;
+  z-index: 1001;
+  margin-right: 20px;
 }
 .menu-toggle input {
   position: absolute;
@@ -73,7 +74,7 @@ nav ul li a:hover {
   top: -3px;
   opacity: 0;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1002;
 }
 
 .menu-toggle span {
@@ -95,8 +96,11 @@ nav ul li a:hover {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .hero h1 {
@@ -121,13 +125,14 @@ nav ul li a:hover {
   display: inline-block;
   text-decoration: none;
   background-color: #1c1c1c;
-  color: #f1f1f1;
+  color: #ffffff;
   padding: 15px 50px;
   border-radius: 10px;
   font-weight: 600;
   margin-bottom: 50px;
   box-shadow: 0 4px 6px #1c1c1c;
-  position: absolute;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .hero a:hover {
@@ -141,6 +146,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 
 .profil-kiri {
@@ -150,8 +156,10 @@ nav ul li a:hover {
 }
 
 .profil-kiri img {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50px;
   box-shadow: 0 25px 30px #b0b0b0;
@@ -161,25 +169,23 @@ nav ul li a:hover {
   flex: 2;
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 40px;
   margin: auto;
   border-radius: 15px 0px 0px 15px;
   background-color: #1c1c1c;
   color: #ffffff;
 }
 
+.bungkus-kanan {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+}
 .bungkus-kanan h1 {
   font-family: "Orbitron", sans-serif;
   margin-bottom: 20px;
   color: #ffffff;
   text-shadow: 0 6px 12px #b0b0b0;
-}
-
-.bungkus-kanan {
-  width: 100%;
-  padding: 25px;
-  font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .icons-luhur {
@@ -203,7 +209,7 @@ nav ul li a:hover {
 .about h2 {
   width: 100%;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
   margin-bottom: 10px;
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
@@ -228,12 +234,13 @@ nav ul li a:hover {
 .skill-kotak {
   text-align: center;
   padding: 50px;
+  margin-top: 100px;
 }
 
 .skill-kotak h2 {
   margin-bottom: 30px;
   font-size: 2rem;
-  margin-top: 350px;
+  margin-top: 100px;
   font-family: "Orbitron", sans-serif;
   color: #ffffff;
   padding: 20px 10px;
@@ -250,7 +257,7 @@ nav ul li a:hover {
 
 .kotak-skill {
   background-color: #1c1c1c;
-  padding: 50px 100px;
+  padding: 30px 50px;
   border-radius: 8px;
   font-weight: bold;
   font-size: 2rem;
@@ -261,7 +268,7 @@ nav ul li a:hover {
 .Gallery {
   padding: 50px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .Gallery h2 {
@@ -277,9 +284,8 @@ nav ul li a:hover {
 .box-foto {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
-  padding: 20px;
 }
 
 .foto {
@@ -299,11 +305,13 @@ nav ul li a:hover {
 /* ini kotak */
 
 .contact-container {
-  margin: 90px;
+  margin: 150px auto;
+  max-width: 800px;
   padding: 30px;
   background-color: #1c1c1c;
   border-radius: 15px;
   font-family: "Orbitron", sans-serif;
+  box-sizing: border-box;
 }
 
 .contact-container h2 {
@@ -379,34 +387,54 @@ button:hover {
 /* responsivive breakpoint */
 
 /* uluran tablat */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   nav ul {
-    width: 50%;
+    width: 60%;
+  }
+  .profil {
+    flex-direction: column;
+  }
+  .profil-kanan {
+    border-radius: 0px;
   }
 }
 /* uluran mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .menu-toggle {
     display: flex;
+  }
+  nav {
+    justify-content: space-around;
   }
   nav ul {
     position: absolute;
     right: 0;
     top: 0;
-    width: 80%;
-    height: 100vh;
-    justify-content: space-evenly;
+    width: 100%;
+    height: 40vh;
+    gap: 30px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #0a0a0a;
-    z-index: -1;
+    z-index: 1000;
     transform: translateX(100%);
     transition: all 0.5s;
-    opacity: 0;
-  }
-
-  nav ul.slide {
     opacity: 1;
+  }
+  nav ul.slide {
     transform: translateX(0);
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .about h2,
+  .skill-kotak h2,
+  .Gallery h2 {
+    margin-top: 80px;
+  }
+  .kotak-skill {
+    padding: 30px;
+    font-size: 1rem;
   }
 }
