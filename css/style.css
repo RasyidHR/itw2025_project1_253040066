@@ -88,7 +88,7 @@ nav ul li a:hover {
 /* pahlawan */
 
 .hero {
-  background-image: url(../img/hero5.png);
+  background-image: url(../img/After/hero5.png);
   background-size: cover;
   width: 100%;
   height: 100dvh;
@@ -182,6 +182,16 @@ nav ul li a:hover {
   font-family: "Courier New", Courier, monospace;
 }
 
+.icons-luhur {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.icons-luhur a {
+  color: #ffffff;
+}
+
 /* ini about */
 .about {
   display: flex;
@@ -208,7 +218,7 @@ nav ul li a:hover {
   padding: 50px;
   margin: 50px;
   width: 200px;
-  height: 90px;
+  height: auto;
   border-radius: 10px;
   background-color: #1c1c1c;
   color: #ffffff;
@@ -234,7 +244,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
   color: #ffffff;
 }
 
