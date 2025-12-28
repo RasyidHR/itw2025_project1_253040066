@@ -330,7 +330,8 @@ nav ul li a:hover {
 
 .name-group {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 input {
@@ -360,6 +361,15 @@ button {
 button:hover {
   background-color: #ffffff;
   color: #0a0a0a;
+}
+
+/* suku */
+.kaki {
+  background-color: #1c1c1c;
+  padding: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
 }
 
 /* Hamburger menu animation */
@@ -406,8 +416,10 @@ button:hover {
 }
 /* uluran mobile */
 @media screen and (max-width: 600px) {
-  html {
+  html,
+  body {
     overflow-x: hidden;
+    max-width: 100%;
   }
   .menu-toggle {
     display: flex;
@@ -448,5 +460,8 @@ button:hover {
   .kotak-skill {
     padding: 30px;
     font-size: 1rem;
+  }
+  .contact-container {
+    border-radius: 0px;
   }
 }
